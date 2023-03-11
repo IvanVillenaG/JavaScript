@@ -5,7 +5,7 @@ miArray.shift();
 
 const primerElemento = miArray[0];
 
-miArray.slice(0,1)
+miArray.slice(0,1)[0]
 
 console.log(primerElemento);
 
@@ -18,4 +18,4 @@ miArray.pop();
 
 const ultimoElemento = miArray[-1];
 
-miArray.slice(-1);
+miArray.slice(-1)[0];
