@@ -46,7 +46,7 @@ const cargarPokedex = async () => {
   input.addEventListener("input", (event) => {
     buscarPokemon(pokemon, event.target.value);
   });
-}; // Nuestra funcion de inicialización donde añadimos las funciones, llamamos a la funcion url y la guardamos en pokemonData. Despues llamamos a todos pokemon con promise.all con sus imagenes, nombre e ID y los almacenamos en la variable pokemon. Después "dibujamos" todos esos pokemons. Luego selecionamos nuestro input de busqueda y le asignamos un evento y llama a la funcion buscarPokemon, el array de objetos pokemon y el valor que el usuario ha puesto en el input. La función filtra el contenido y nos muestra los pokemon que contengan ese valor.
+}; // Nuestra funcion de inicialización donde añadimos las funciones, llamamos a la funcion url y la guardamos en pokemonData. Despues llamamos a todos pokemon con promise.all con sus imagenes, nombre e ID y los almacenamos en la variable pokemon. Después "dibujamos" todos esos pokemons. Luego seleccionamos nuestro input de busqueda y le asignamos un evento y llama a la funcion buscarPokemon, el array de objetos pokemon y el valor que el usuario ha puesto en el input. La función filtra el contenido y nos muestra los pokemon que contengan ese valor.
 
 cargarPokedex();
 
