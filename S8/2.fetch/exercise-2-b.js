@@ -11,7 +11,7 @@ search.addEventListener('click', () =>{
     .then(data => {
         results.innerHTML = '';
         data.country.forEach(countryData => {
-            const {country_id, probability} = countryData;
+            const countryData = {country_id, probability};
             const p = document.createElement('p');
             p.textContent = `el nombre ${name.value} tiene un ${probability}% de ser de ${country_id}.`;
             results.appendChild(p);
