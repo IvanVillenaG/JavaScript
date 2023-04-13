@@ -17,7 +17,7 @@ arrDescriptions = [
 'S/N ¿Eres Deportista?',
 'S/N ¿Te gustan los videojuegos?',]
 
-for (pregunta of arrDescipciones) {
+for (pregunta of arrDesciptions) {
    let respuesta = pregunta.startWith('S/N') 
     ? father(pregunta, confirmExample) 
     : father(pregunta, promptExample);
