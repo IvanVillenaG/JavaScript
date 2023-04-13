@@ -9,11 +9,19 @@ function promptExample(description){
 }
 
 function father(description, callback){
-    userAnwsers.push(callback(description));
+    return (callback(description));
 }
 
-father('¿Como te llamas?', promptExample);
-father(userAnwsers + " ¿es es tú nombre?", confirmExample);
+arrDescriptions = [
+'S/N ¿Eres mayor de edad?',
+'S/N ¿Eres Deportista?',
+'S/N ¿Te gustan los videojuegos?',]
 
-console.log(userAnwsers);
+for (pregunta of arrDescipciones) {
+   let respuesta = pregunta.startWith('S/N') 
+    ? father(pregunta, confirmExample) 
+    : father(pregunta, promptExample);
+   userAnswers.push(respuesta);
+};
 
+console.log(userAnswers);
